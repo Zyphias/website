@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #5A5A5A;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+.box {
+    margin: 0 100px 0 100px;
+    max-width: 1000px;
+    flex-basis: 900px;
+}
+
+
+.header {
+    border: 3px solid red;
+    padding: 15px;
+    margin: 5px 0 5px 0;
+}
+
+.container {
+    display: flex;
+    border: 3px solid black;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.content {
+    border: 3px solid blue;
+    flex: 3;
+    margin: 5px;
+}
+
+.sidebar {
+    border: 3px solid green;
+    flex: 1;
+    margin: 5px;
+}
+
+.sidebar, .content {
+    padding: 20px 40px;
+}
+
+code {
+    border: red 1px solid;
+}
