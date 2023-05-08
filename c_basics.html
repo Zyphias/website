@@ -7,6 +7,7 @@
     <title>SteveYeung</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
 </head>
 <body>
     <div class="box">
@@ -16,7 +17,10 @@
             <div class="content">
 
                 <h1>The Terminal</h1>
-                <h1>Compiling and Running</h1>
+                <div class="terminal">
+                    <code>$ |</code>
+                </div>
+
                 <h1>Code Example</h1>
 
                 <pre><code>
@@ -30,15 +34,23 @@
     }
                 </code></pre>
 
+                <h1>Compiling and Running</h1>
+                <div class="terminal">
+                    <code>$ gcc hello.c -o hello</code>
+                    <code>$ ./hello</code>
+                    <code>$ Hello World!</code>
+                </div>
+
+
                 <h1>Header Libraries</h1>
 
-                <pre><code>
+                <pre><code class="header">
     #include &lt;stdio.h&gt;
                 </code></pre>
 
                 <h1>The Main Function</h1>
 
-                <pre><code>
+                <pre><code class="main">
     int main(void) {
 
         // insert code here...
@@ -49,19 +61,26 @@
 
                 <h1>Scanning and Storing Variables</h1>
 
-                <pre><code>
+                <pre><code class="variables">
     #include &lt;stdio.h&gt;
 
     int main(void) {
 
         int a = 0;
+        printf(&quot;Enter an integer: &quot;);
         scanf(&quot;%i\n&quot;, &amp;a);
 
-        printf(&quot;%i\n&quot;, a);
+        printf(&quot;The number you entered was %i\n&quot;, a);
 
         return 0;
     }
                 </code></pre>
+                <div class="terminal">
+                    <code>$ gcc variables.c -o variables</code>
+                    <code>$ ./variables</code>
+                    <code>$ Enter an integer: <strong>3</strong></code>
+                    <code>$ The number you entered was 3</code>
+                </div>
 
                 <h1>Data types</h1>
                 <h1>Arrays</h1>
@@ -71,9 +90,14 @@
                 <h1>Linked Lists</h1>
 
             </div>
+            
         </div>
+        
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
+
 </body>
+
 </html>

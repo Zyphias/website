@@ -48,3 +48,21 @@ html {
 code {
     border: red 1px solid;
 }
+
+.terminal {
+    border: white 1px solid;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.terminal code {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.user {
+    color: red;
+}
